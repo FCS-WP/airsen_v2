@@ -1,0 +1,51 @@
+.span-icon {
+  position: relative;
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 120%;
+    z-index: 12;
+    background-size: cover;
+    height: 120%;
+  }
+  &.round {
+    &::before {
+      background-image: url(https://staging.theshin.info/wp-content/uploads/2025/06/Airssen-Website-Pages_Icon-2.png);
+    }
+  }
+
+  &.two-line {
+    &::before {
+      bottom: -20px;
+      top: auto;
+      background-image: url(https://staging.theshin.info/wp-content/uploads/2025/06/Airssen-Website-Pages_Icon-3.png);
+    }
+  }
+
+  &.three {
+    &::before {
+      bottom: -25px;
+      width: 110%;
+      top: auto;
+      background-image: url(https://staging.theshin.info/wp-content/uploads/2025/06/Airssen-Website-Pages_Icon-4.png);
+    }
+    &::after {
+      top: -30px;
+      right: -60px;
+      background-position: right;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url(https://staging.theshin.info/wp-content/uploads/2025/06/Airssen-Website-Pages_Icon-5.png);
+    }
+  }
+  &.one-line {
+    &::before {
+      bottom: -20px;
+      top: auto;
+      background-image: url(https://staging.theshin.info/wp-content/uploads/2025/06/Airssen-Website-Pages_Icon-16.png);
+    }
+  }
+}

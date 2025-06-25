@@ -1,0 +1,27 @@
+@import "woo_override";
+@import "mini_cart";
+@import "component";
+.project-map {
+  filter: brightness(93%) contrast(144%) saturate(0%) blur(0px)
+    hue-rotate(360deg);
+}
+
+.elementor-location-header {
+  position: relative;
+  z-index: 999;
+}
+
+#content {
+  overflow-x: hidden;
+}
+
+.list-repair {
+  .elementor-icon-box-title {
+    margin: 0px 5px 0px 0px;
+
+  }
+  .elementor-icon-box-content {
+    display: flex;
+    align-items: center;
+  }
+}
