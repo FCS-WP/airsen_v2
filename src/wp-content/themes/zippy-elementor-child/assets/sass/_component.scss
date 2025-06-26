@@ -16,6 +16,12 @@
       background-image: url(https://staging.theshin.info/wp-content/uploads/2025/06/Airssen-Website-Pages_Icon-2.png);
     }
   }
+  &.round.bottom {
+    &::before {
+      top: auto;
+      bottom: -10px;
+    }
+  }
 
   &.two-line {
     &::before {
