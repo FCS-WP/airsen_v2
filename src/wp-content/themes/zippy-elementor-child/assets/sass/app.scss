@@ -16,12 +16,13 @@
 }
 
 .list-repair {
-  .elementor-icon-box-title {
-    margin: 0px 5px 0px 0px;
-
-  }
-  .elementor-icon-box-content {
-    display: flex;
-    align-items: center;
+  @include tablet {
+    .elementor-icon-box-title {
+      margin: 0px 5px 0px 0px;
+    }
+    .elementor-icon-box-content {
+      display: flex;
+      align-items: center;
+    }
   }
 }
