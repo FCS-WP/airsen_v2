@@ -13,7 +13,7 @@
   }
   &.round {
     &::before {
-      background-image: url(https://staging.theshin.info/wp-content/uploads/2025/06/Airssen-Website-Pages_Icon-2.png);
+      background-image: url(/wp-content/uploads/2025/06/Airssen-Website-Pages_Icon-2.png);
     }
   }
   &.round.bottom {
@@ -27,7 +27,7 @@
     &::before {
       bottom: -20px;
       top: auto;
-      background-image: url(https://staging.theshin.info/wp-content/uploads/2025/06/Airssen-Website-Pages_Icon-3.png);
+      background-image: url(/wp-content/uploads/2025/06/Airssen-Website-Pages_Icon-3.png);
     }
   }
 
@@ -36,7 +36,7 @@
       bottom: -25px;
       width: 110%;
       top: auto;
-      background-image: url(https://staging.theshin.info/wp-content/uploads/2025/06/Airssen-Website-Pages_Icon-4.png);
+      background-image: url(/wp-content/uploads/2025/06/Airssen-Website-Pages_Icon-4.png);
     }
     &::after {
       top: -30px;
@@ -44,14 +44,14 @@
       background-position: right;
       background-size: contain;
       background-repeat: no-repeat;
-      background-image: url(https://staging.theshin.info/wp-content/uploads/2025/06/Airssen-Website-Pages_Icon-5.png);
+      background-image: url(/wp-content/uploads/2025/06/Airssen-Website-Pages_Icon-5.png);
     }
   }
   &.one-line {
     &::before {
       bottom: -20px;
       top: auto;
-      background-image: url(https://staging.theshin.info/wp-content/uploads/2025/06/Airssen-Website-Pages_Icon-16.png);
+      background-image: url(/wp-content/uploads/2025/06/Airssen-Website-Pages_Icon-16.png);
     }
   }
 }
