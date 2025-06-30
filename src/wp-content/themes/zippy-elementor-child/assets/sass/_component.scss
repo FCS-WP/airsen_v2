@@ -1,5 +1,6 @@
 .span-icon {
   position: relative;
+
   &::before,
   &::after {
     content: "";
@@ -11,15 +12,23 @@
     background-size: cover;
     height: 120%;
   }
+
   &.round {
     &::before {
       background-image: url(/wp-content/uploads/2025/06/Airssen-Website-Pages_Icon-2.png);
+
+      @include only-mobile {
+        top: -15px;
+        width: 140%;
+      }
     }
   }
+
   &.round.bottom {
     &::before {
       top: auto;
-      bottom: -10px;
+      bottom: -5px;
+      right: -10px;
     }
   }
 
@@ -38,6 +47,7 @@
       top: auto;
       background-image: url(/wp-content/uploads/2025/06/Airssen-Website-Pages_Icon-4.png);
     }
+
     &::after {
       top: -30px;
       right: -60px;
@@ -45,8 +55,37 @@
       background-size: contain;
       background-repeat: no-repeat;
       background-image: url(/wp-content/uploads/2025/06/Airssen-Website-Pages_Icon-5.png);
+
+      @include only-mobile {
+        right: -40px;
+        top: -20px;
+      }
     }
   }
+
+  &.three.title {
+    &::before {
+      right: 0px;
+    }
+
+    &::after {
+      right: -40px;
+      top: -15px;
+
+    }
+  }
+
+  &.three.condition {
+    &::before {
+      background-size: contain;
+    }
+
+    &::after {
+      display: none;
+
+    }
+  }
+
   &.one-line {
     &::before {
       bottom: -20px;
