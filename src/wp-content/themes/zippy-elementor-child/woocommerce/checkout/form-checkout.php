@@ -48,8 +48,7 @@ if (! $checkout->is_registration_enabled() && $checkout->is_registration_require
 				<?php do_action('woocommerce_checkout_before_order_review'); ?>
 
 				<div id="order_review" class="woocommerce-checkout-review-order">
-					<!-- Delivery method part  -->
-					<?php get_template_part('template-parts/checkout/delivery-review', ''); ?>
+				
 					<?php do_action('woocommerce_checkout_order_review'); ?>
 				</div>
 				<?php do_action('woocommerce_checkout_after_customer_details'); ?>

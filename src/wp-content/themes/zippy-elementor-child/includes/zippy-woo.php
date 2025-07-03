@@ -39,43 +39,4 @@ function custom_add_to_cart_button()
   <?php endif; ?>
 
   <?php
-  // Or link to cart directly:
-  //
-}
-// add_action('woocommerce_checkout_before_customer_details', 'add_notification_coupon');
-
-function add_notification_coupon()
-{
-  echo '<p style="text-align:center;color:#000000">🎉 Enjoy 10% Off Your Order!
-    Use code <strong style="color:var(--e-global-color-primary);">NSDM10</strong> at checkout for 10% off when you spend a minimum of $330.</p>';
-}
-
-add_action('wp_footer', 'trigger_open_pickup_pop_up');
-function trigger_open_pickup_pop_up()
-{
-  if (!function_exists('WC') || !WC()->session->get('order_mode')) {
-    $popup_id = '232';
-    ElementorPro\Modules\Popup\Module::add_popup_to_location($popup_id);
-  ?>
-    <script>
-      jQuery(document).ready(function() {
-        jQuery(window).on('elementor/frontend/init', function() {
-          elementorFrontend.on('components:init', function() {
-            jQuery('.add_to_cart_button').on('click', function(e) {
-              e.preventDefault();
-              // show the popup
-              elementorFrontend.documentsManager.documents[<?php echo $popup_id; ?>].showModal();
-              var product_id = jQuery(this).data('product_id');
-              console.log(product_id);
-              jQuery('#zippy-form').attr('data-product_id', product_id);
-              jQuery('#zippy-form').attr('quantity', jQuery('input[name="quantity"').val());
-
-            });
-          });
-        })
-
-      });
-    </script>;
-<?php
-  };
 }
